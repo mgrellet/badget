@@ -4,15 +4,15 @@ import {FormsModule} from '@angular/forms';
 
 import {IonicModule} from '@ionic/angular';
 
-import {HomePageRoutingModule} from './home-routing.module';
+import {SettingsPageRoutingModule} from './settings-routing.module';
 
-import {HomePage} from './home.page';
+import {SettingsPage} from './settings.page';
 import {RouterModule, Routes} from "@angular/router";
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: SettingsPage,
   },
 ];
 
@@ -21,13 +21,13 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    SettingsPageRoutingModule,
     RouterModule.forChild(routes)
   ],
   exports: [
     RouterModule
   ],
-  declarations: [HomePage]
+  declarations: [SettingsPage]
 })
-export class HomePageModule {
+export class SettingsPageModule {
 }
