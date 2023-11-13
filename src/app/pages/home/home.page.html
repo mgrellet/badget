@@ -21,52 +21,20 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col size-sm="6" offset-sm="3">Type</ion-col>
-      <!--<ion-col size-sm="6" offset-sm="3">Percentage</ion-col>-->
-      <ion-col size-sm="6" offset-sm="3">Amount</ion-col>
-      <ion-col size-sm="6" offset-sm="3">Expense</ion-col>
-      <ion-col size-sm="6" offset-sm="3">Balance</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>Home</ion-col>
-      <!--          <ion-col>30%</ion-col>-->
-      <ion-col>12345</ion-col>
-      <ion-col>123</ion-col>
-      <ion-col>456</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>Food</ion-col>
-      <!--          <ion-col>20%</ion-col>-->
-      <ion-col>12345</ion-col>
-      <ion-col>123</ion-col>
-      <ion-col>456</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>Gas</ion-col>
-      <!--          <ion-col>10%</ion-col>-->
-      <ion-col>12345</ion-col>
-      <ion-col>123</ion-col>
-      <ion-col>456</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>Misc</ion-col>
-      <!--          <ion-col>20%</ion-col>-->
-      <ion-col>12345</ion-col>
-      <ion-col>123</ion-col>
-      <ion-col>456</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>Save</ion-col>
-      <!--          <ion-col>20%</ion-col>-->
-      <ion-col>12345</ion-col>
-      <ion-col>123</ion-col>
-      <ion-col>456(autocalculated)</ion-col>
+  <ion-grid [class]="tableTheme">
+    <ion-row [class]="tableHeader">
+      <ion-col>Type</ion-col>
+      <ion-col >Amount</ion-col>
+      <ion-col>description</ion-col>
+      <ion-col >Balance</ion-col>
     </ion-row>
 
+    <ion-row *ngFor="let item of records">
+      <ion-col>{{ item?.type }}</ion-col>
+      <ion-col>{{ item?.amount }}</ion-col>
+      <ion-col>{{ item?.description }}</ion-col>
+      <ion-col>{{ item?.balance }}</ion-col>
+    </ion-row>
   </ion-grid>
-
-
 
 </ion-content>

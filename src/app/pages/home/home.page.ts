@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {Expense} from "../../interfaces/expense";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  tableHeader: string = 'header-dark';
+  tableTheme: string = 'ion-border';
+  records: any;
+
+  constructor(private http: HttpClient) {
+
+  }
 
   ngOnInit() {
+    this.http.get<Expense>('/../../assets/data/records.json')
+      .subscribe((res) => {
+        console.log(res)
+        this.records = res;
+      });
   }
 
 }
