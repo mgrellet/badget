@@ -1,0 +1,82 @@
+[
+  {
+    "type": "Groceries",
+    "amount": 50.25,
+    "description": "Weekly grocery shopping",
+    "balance": "Positive",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Utilities",
+    "amount": 100.0,
+    "description": "Electricity bill",
+    "balance": "Negative",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Dining Out",
+    "amount": 30.75,
+    "description": "Dinner with friends",
+    "balance": "Positive",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Transportation",
+    "amount": 40.0,
+    "description": "Gas for the car",
+    "balance": "Negative",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Entertainment",
+    "amount": 25.5,
+    "description": "Movie night",
+    "balance": "Positive",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Healthcare",
+    "amount": 75.0,
+    "description": "Doctor's visit",
+    "balance": "Negative",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Shopping",
+    "amount": 60.99,
+    "description": "New clothes",
+    "balance": "Positive",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Home Improvement",
+    "amount": 120.0,
+    "description": "Paint for the living room",
+    "balance": "Negative",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Education",
+    "amount": 80.5,
+    "description": "Online course subscription",
+    "balance": "Positive",
+    "month": 11,
+    "year": 2023
+  },
+  {
+    "type": "Miscellaneous",
+    "amount": 45.0,
+    "description": "Random expense",
+    "balance": "Negative",
+    "month": 11,
+    "year": 2023
+  }
+]
